@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Предзаказ — Аль-Баракат</title>
+<style>
+:root{--bg:#06251b;--bg2:#0a3425;--card:#0d3a2b;--tx:#f6f0e2;--mut:#a9c0b4;--ac:#f3ab3c;--on:#14251d;--bd:#1f5a45;--warn:#ff8a73;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#06251b;--card:#0d3a2b;--tx:#f6f0e2}}
+:root[data-theme="dark"]{--bg:#06251b;--card:#0d3a2b;--tx:#f6f0e2}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:radial-gradient(1200px 500px at 50% -100px,var(--bg2),var(--bg));background-color:var(--bg);color:var(--tx);font:16px/1.4 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding-bottom:92px}
+.w{max-width:640px;margin:0 auto;padding:0 14px}
+header{text-align:center;padding:26px 14px 10px}
+header svg{width:74px;height:74px}
+header h1{margin:6px 0 0;font-size:30px;letter-spacing:3px;color:var(--ac);font-weight:500}
+header .k{margin:2px 0 0;font-size:13px;letter-spacing:2px;color:var(--mut)}
+header .rm{margin:10px auto 0;display:inline-block;padding:5px 16px;border:1px solid var(--ac);border-radius:99px;color:var(--ac);font-size:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:15px;margin:14px 0}
+h2{font-size:17px;margin:0 0 10px;color:var(--ac);font-weight:600}
+label{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}
+input{width:100%;font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:11px}
+input::placeholder{color:#6f8c7f}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.tg button{padding:13px 8px;border-radius:12px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font-size:15px}
+.tg button.on{background:var(--ac);color:var(--on);border-color:var(--ac);font-weight:700}
+.nav{display:flex;gap:8px;overflow-x:auto;padding:10px 0;position:sticky;top:0;background:var(--card);z-index:5;scrollbar-width:none;margin-top:8px}
+.nav a{white-space:nowrap;padding:8px 13px;border-radius:99px;border:1px solid var(--bd);color:var(--tx);text-decoration:none;font-size:14px}
+.it{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--bd)}
+.it:last-child{border:0}.it span{flex:1}.it small{display:block;color:var(--ac);font-size:13px}.tot{margin-top:12px;border-top:1px solid var(--bd);padding-top:10px}.tot div{display:flex;justify-content:space-between;padding:3px 0}.tot .g{font-weight:700;font-size:18px;color:var(--ac)}
+.st{display:flex;align-items:center;gap:10px}.st b{min-width:18px;text-align:center}
+button,a.pri{font:inherit;cursor:pointer}
+.b{width:36px;height:36px;border-radius:50%;border:1px solid var(--ac);background:transparent;color:var(--ac);font-size:20px;line-height:1}
+.b.p{background:var(--ac);color:var(--on)}
+.pri{display:block;text-align:center;text-decoration:none;width:100%;padding:14px;border-radius:12px;border:0;background:var(--ac);color:var(--on);font-weight:700;font-size:16px;margin-top:10px}
+.sec{width:100%;padding:13px;border-radius:12px;border:1px solid var(--ac);background:transparent;color:var(--ac);font-weight:600;margin-top:10px}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--bd);z-index:9}
+.bar button{max-width:640px;margin:0 auto}
+.mut{color:var(--mut);font-size:13px}.err{color:var(--warn);font-size:14px;margin-top:8px}
+.ci{padding:10px 0;border-bottom:1px solid var(--bd)}.ci:last-child{border:0}
+pre{white-space:pre-wrap;background:var(--bg);border:1px dashed var(--ac);border-radius:10px;padding:12px;font:14px/1.5 inherit;margin:10px 0 0}
+.note{background:rgba(255,138,115,.12);border:1px solid var(--warn);border-radius:10px;padding:10px 12px;font-size:14px;margin-top:10px}
+.hid{display:none}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:50;display:flex;align-items:center;justify-content:center;padding:18px}
+.ov.hid{display:none}
+.dl{background:var(--card);border:2px solid var(--ac);border-radius:18px;padding:22px 20px;max-width:440px;width:100%;text-align:center}
+.dl .ic{font-size:38px}.dl h3{margin:6px 0 10px;color:var(--ac);font-size:20px}.dl p{margin:0 0 6px;text-align:left}
+</style></head><body>
+<header>
+<svg viewBox="0 0 80 80" aria-hidden="true"><path d="M52 10a30 30 0 1 0 0 60 24 24 0 1 1 0-60z" fill="#f3ab3c"/><path d="M62 22l2.4 5.6 6 .6-4.5 4 1.4 5.9-5.3-3.1-5.3 3.1 1.4-5.9-4.5-4 6-.6z" fill="#f3ab3c"/></svg>
+<h1>AL BARAKAT</h1><div class="k">MEIRAMHANA</div><div class="rm">Рамадан Мубарак · Предзаказ к ифтару</div>
+</header>
+<div class="w">
+<div class="card"><h2>1. Ваша бронь</h2>
+<label>Имя, на которое сделана бронь</label><input id="nm" placeholder="Например, Ахмад" autocomplete="name">
+<div class="r2"><div><label>Дата</label><input id="dt" type="date"></div><div><label>Гостей</label><input id="gs" type="number" min="1" max="200" inputmode="numeric" placeholder="6"></div></div>
+<label>Когда подать блюда</label>
+<div class="tg"><button id="mi" class="on" type="button">🌙 Подготовить к ифтару</button><button id="mo2" type="button">🕒 Другое время</button></div>
+<div id="tw" class="hid"><label>Время подачи</label><input id="tm" type="time"></div>
+<p class="mut">К ифтару — время указывать не нужно, мы подадим блюда к вашему приезду на ифтар.</p></div>
+<div class="card"><h2>2. Выберите блюда</h2><input id="q" type="search" placeholder="Поиск по меню…"><div id="nav" class="nav"></div><div id="menu"></div></div>
+<div class="card" id="order"><h2>3. Ваш заказ</h2><div id="cart"></div><div id="tot" class="tot"></div><p class="mut">Цены по меню. К сумме добавляется обслуживание 10%.</p><div id="err" class="err"></div>
+<button class="pri" id="mk">Сформировать сообщение</button>
+<div id="res" class="hid"><div class="note"><b>Предзаказ ещё не отправлен.</b> Нажмите зелёную кнопку ниже и в WhatsApp нажмите «Отправить». Это не бронь стола: стол бронируется отдельно у администратора.</div>
+<pre id="msg"></pre>
+<a class="pri" id="wa" href="#">Отправить в WhatsApp</a><button class="sec" id="cp" type="button">Не открывается? Скопировать текст</button><div id="ok" class="mut"></div></div></div>
+<p class="mut" style="text-align:center">Предзаказ принят, когда мы подтвердим его ответным сообщением в WhatsApp. Время приготовления в среднем 20–25 минут.</p>
+</div>
+<div class="bar"><button class="pri" id="go" type="button" style="margin:0 auto">Ваш заказ: 0 блюд</button></div>
+<div class="ov hid" id="ov" role="dialog" aria-modal="true"><div class="dl"><div class="ic">⭐</div><h3 id="mt"></h3><div id="mb"></div><button class="pri" id="mok" type="button">Понятно</button></div></div>
+<script>
+var WA="77078077388";
+var MENU=[["Завтраки",[["Глазунья",690],["Шакшука",1990],["Блинчики 3 шт",790],["Блинчики 5 шт",1290],["Каша рисовая с апельсином",1090],["Бенедикт по-казахски",2190],["Омлет с сыром",1790],["Кабачковые оладьи с лососем",2190],["Драники с казы",1890],["Ассорти по-казахски",2190]]],["Салаты",[["Цезарь с курицей",2490],["Цезарь с семгой",2890],["Цезарь с креветками",2890],["Гнездо глухаря",2390],["Оливье",2390],["Пекинский салат",2390],["Восточный салат (баклажаны, овощи)",2490],["Малибу",2390],["Греческий салат",2390],["Витаминный салат",2390],["Тёплый салат с телятиной",2690],["Терияки чикен",2490],["Салат «Аль-Баракат»",2590],["Бадрежаны (хрустящие баклажаны)",2290],["Салат «Осторожно, очень вкусно»",2590],["Руккола с креветками",3190],["Ачучук",1990],["Свежий салат",1990],["Микс салата с бурратой",3590]]],["Выпечка",[["Хачапури по-царски",2990],["Хачапури по-мегрельски",2890],["Хачапури по-аджарски",2890],["Хычины с сыром",1790],["Хычины с зеленью",1790],["Самса с курицей",350],["Самса с мясом",350],["Самбус (на заказ)",350],["Гош нан",2190],["Чесночный хлеб",1390],["Гарлики",1390],["Лепёшка",300],["Хлебная корзина",1290]]],["Пицца",[["Пицца Пепперони",2990],["Пицца Маргарита",2590],["Пицца 4 сыра",2990],["Пицца Болоньезе",2990],["Пицца с лососем",3390],["Пицца курица с грибами",2990]]],["Холодные закуски",[["Тарталетки с лососем и эсколаром",2290],["Мясное ассорти",6990],["Рыбное ассорти",7390]]],["Фастфуд",[["Биф бургер",2290],["Чиз бургер",1890],["Чикен бургер",1790],["Детский сет №1",2890],["Детский сет №2",3590],["Клаб-сэндвич",2290],["Креветки в панировке",2290],["Креветки в сливочном соусе",2290],["Нагетсы",1990],["Сырные палочки",1790],["Острые крылья",2790],["Крылья микс",5990]]],["Супы",[["Суп-лапша",1790],["Солянка",1990],["Уха",2290],["Грибной крем-суп",1890],["Суп чечевичный",1590],["Пельмени по-домашнему (Тушпара)",1890],["Окрошка",1790],["Рамен с говядиной",2590],["Рамен с курицей",2390],["Том Ям",3990],["Фирменный хого «Аль-Баракат»",6390],["За Шуй Тан",1990],["Ван Зу Тан",1890],["Манпар",1890],["Сорпа из баранины",1990],["Сорпа из говядины",1990],["Чушура",1890],["Мясо по-казахски",2390]]],["Пасты",[["Паста Болоньезе",2890],["Паста Альфредо",2690],["Фетучини с сёмгой",3190],["Фетучини с креветками",2990]]],["Гарниры",[["Картофельные дольки",990],["Картофель фри",990],["Рис",790],["Пюре",790],["Овощи гриль",990],["Тесто",790],["Момо",390]]],["Гриль",[["Рибай",6190],["Тибон",6090],["Медальоны",4990],["Стейк из сёмги",5490],["Форель на гриле",3990],["Дорадо на гриле",3990],["Томлёное ребро",4990],["Томлёные говяжьи щёчки",4390]]],["Лагманы",[["Гуйру лагман",1990],["Суйру лагман",1990],["Гуйру ганфан",1990],["Суйру ганфан",1990],["Гуйру цомян",1990],["Суйру цомян",1990],["Восточный лагман",1890],["Цомян от шефа",3990],["Домашний лагман",1890],["Динь-динь цомян",2090],["Ган бян цомян",2290],["Мо гу ру лагман",2090],["Мо шу ру лагман",2090],["Лагман из бараньих рёбер",3190],["Фирменный лагман «Аль-Баракат» 4 сая",2890],["Лагман от шефа",2890],["Казан-кебаб лагман",3190],["Джусай лагман",2190],["Кашгарский лагман",2290],["Жандо лагман",2190],["Тандырный лагман с казы",4590],["Тандырный лагман с бараньими рёбрами",4590]]],["Сай",[["Мо мо сай",1990],["Ган бян чайзи",3290],["Чай зи ру",3390],["Ган бян жи с орехами",3390],["Ган бян жи с орехами (большая)",5290],["Казан-кебаб",3590],["Тибян жи",2990],["Тибян ян пай",2990],["Опкя хесип",2990],["Кала пачак",3390],["Керин сай (требуха)",3490],["Фри с мясом",3190],["Фри с креветками",3590],["Лаз джи",2790],["Мо шу ру сай",3490],["Ган бян мо гу",2990],["Ван зи сай",3490],["Фунчеза сай",3390],["Тухум сай",2290],["Ла зы ру",3490],["Ганго джи",4490],["Ганго туды пиар",3990],["Тан су ю (судак)",3290],["Ашлям фу",2190],["Жашан тофу",2790],["Мола тофу",2590]]],["Горячие блюда",[["Котлеты говяжьи",2590],["Котлеты куриные",2490],["Курица в кисло-сладком соусе",2590],["Фрикасе",2490],["Бефстроганов",2990],["Курица по-двински",2790],["Шницель грибное соте",2790],["Картофель по-деревенски",2690],["Мясо по-китайски",2790],["Бешбармак",3290],["Нарын",2590],["Сырне на жаровне",3690],["Сырне порция",3490],["Манты в ассортименте",2090],["Хошан",2190],["Манты жареные",2190],["Манты дрожжевые (5 шт)",2090],["Плов праздничный",2190],["Сазан в кисло-сладком соусе",6690]]],["На компанию",[["Мясной сет",33000],["Рыбный сет",27000],["Хан сырне",24990],["Сырне на компанию",17990],["Куырдак на компанию",17990],["Бешбармак на компанию",18990],["Плов праздничный на компанию",12990],["Плов узбекский",10990],["Манты в ассортименте (30 шт)",9900],["Манты дрожжевые (25 шт)",9900],["Дапан жи",10990],["Дапан ян ру",13990],["Голова барана (на заказ)",4990]]],["Суши",[["Филадельфия классик",2790],["Филадельфия люкс",2790],["Филадельфия гриль",2790],["Цезарь ролл",2790],["Унаги Филадельфия",2790],["Эби темпура",2790],["Унаги темпура",2790],["Америка темпура",2790],["Темпура лосось",2790],["Бургер ролл",3500],["Калифорния",2790],["Запечённый с креветкой",2790],["Запечённый с крабом",2790]]],["Шашлык",[["Баранина (шашлык)",1790],["Люля-кебаб",1590],["Куриное люля с сыром",1590],["Утка (шашлык)",1490],["Куриные крылышки (шашлык)",1490],["Куриная грудка (шашлык)",1490],["Антрекот из баранины",3490],["Овощи на мангале",1390],["Шампиньоны",1390],["Скумбрия на углях",3490],["Форель (шашлык)",3990],["Сёмга (шашлык)",4990],["Лаваш",200],["Соус к шашлыку",350],["Ассорти из шашлыков",24990]]],["Коктейли",[["Коктейль ванильный",1590],["Коктейль шоколадный",1590],["Коктейль клубничный",1590],["Коктейль Oreo",1590]]],["Вода",[["Вода 1 л",890],["Вода с газом 1 л",890],["Borjomi 0,5 л",1290]]],["Чай",[["Чай с молоком",1090],["Чай чёрный листовой",1090],["Чай зелёный листовой",1090],["Чашка чая",290],["Ташкентский чай",1890],["Марокканский чай",1890],["Ягодный чай",1890],["Фруктовый чай",1890],["Облепиховый чай",1890],["Имбирный чай",1890],["Молочный улун",1390],["Карак-ти чайник (шафран, имбирь, кардамон)",1390],["Карак-ти чашка",390],["Аткен чай",790]]],["Лимонады",[["Лимонад Лесные ягоды",1990],["Лимонад Мохито",1990],["Лимонад Манго-маракуйя",1990],["Лимонад Киви-яблоко",1990],["Лимонад Цитрусовый",1990],["Лимонад Гранат-малина",1990],["Лимонад Фирменный «Аль-Баракат»",1990],["Лимонад Лесные ягоды (стакан)",790],["Лимонад Мохито (стакан)",790],["Лимонад Манго-маракуйя (стакан)",790],["Лимонад Киви-яблоко (стакан)",790],["Лимонад Цитрусовый (стакан)",790],["Лимонад Гранат-малина (стакан)",790],["Лимонад Фирменный «Аль-Баракат» (стакан)",790]]],["Напитки",[["Coca-Cola 1 л",990],["Coca-Cola стекло",690],["Coca-Cola Zero 1 л",990],["Fanta 1 л",990],["Sprite 1 л",990],["Fuse Tea 1 л",990],["Сок Piko в ассортименте",1090],["Морс Piko",1190],["Компот фирменный",1290],["Компот фирменный (стакан)",490],["Яблочный фреш 0,35 л",1590],["Апельсиновый фреш",1990]]],["Кофе",[["Капучино",990],["Американо",890],["Латте",890],["Эспрессо",790],["Айс капучино",1090],["Айс латте",1090],["Айс фрапучино",1090],["Айс американо",1090],["Айс ти персик",990],["Айс ти лимон",990],["Айс ти гранат",990],["Горячий шоколад",1090]]],["Десерты",[["Сникерс",2000],["Медовик",1690],["Чизкейк",1690],["Молочная девочка",1690],["Макарон «Дубай»",2490],["Макарон Remi",1790],["Макароны стандарт",1690],["Мини Remi макарон",1090],["Мини макарон",990],["Пахлава",450],["Пахлава молочная",500],["Корпусные десерты",2490]]]];
+var cart={},mode="ift";try{cart=JSON.parse(localStorage.getItem("ab_cart2")||"{}")}catch(e){}
+var P={};MENU.forEach(function(s){s[1].forEach(function(x){P[x[0]]=x[1]})});for(var k in cart){if(!(k in P))delete cart[k]}
+var $=function(i){return document.getElementById(i)};
+function fmt(n){var s=String(n),o="";for(var i=0;i<s.length;i++){if(i&&(s.length-i)%3==0)o+=" ";o+=s[i]}return o+" ₸"}
+function sum(){var s=0;for(var k in cart)s+=cart[k].q*P[k];return s}
+function save(){try{localStorage.setItem("ab_cart2",JSON.stringify(cart));["nm","dt","gs","tm"].forEach(function(k){localStorage.setItem("ab2_"+k,$(k).value)})}catch(e){}}
+["nm","dt","gs","tm"].forEach(function(k){try{var v=localStorage.getItem("ab2_"+k);if(v)$(k).value=v}catch(e){}$(k).addEventListener("input",function(){save();$("res").className="hid"})});
+function esc(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function modal(t,h,after){$("mt").textContent=t;$("mb").innerHTML=h;$("ov").className="ov";$("mok").focus();$("mok").onclick=function(){$("ov").className="ov hid";if(after)after()}}
+document.addEventListener("keydown",function(e){if(e.key==="Escape")$("ov").className="ov hid"});
+function setMode(m){mode=m;$("mi").className=m=="ift"?"on":"";$("mo2").className=m=="ift"?"":"on";$("tw").className=m=="ift"?"hid":"";$("res").className="hid"}
+$("mi").onclick=function(){setMode("ift")};$("mo2").onclick=function(){setMode("tm")};
+function drawMenu(){var f=$("q").value.trim().toLowerCase(),h="",n="";
+MENU.forEach(function(s,i){var items=s[1].filter(function(d){return !f||d[0].toLowerCase().indexOf(f)>-1});if(!items.length)return;
+n+='<a href="#s'+i+'">'+esc(s[0])+'</a>';h+='<h2 id="s'+i+'" style="margin:16px 0 4px;scroll-margin-top:64px">'+esc(s[0])+'</h2>';
+items.forEach(function(x){var d=x[0],c=cart[d]?cart[d].q:0;h+='<div class="it"><span>'+esc(d)+'<small>'+fmt(x[1])+'</small></span><div class="st">'+(c?'<button class="b" data-d="'+esc(d)+'" data-a="-1">−</button><b>'+c+'</b>':'')+'<button class="b p" data-d="'+esc(d)+'" data-a="1">+</button></div></div>'})});
+$("menu").innerHTML=h||'<p class="mut">Ничего не найдено. Попробуйте начало названия.</p>';$("nav").innerHTML=n}
+function total(){var t=0;for(var k in cart)t+=cart[k].q;return t}
+function drawCart(){var h="";for(var k in cart){var c=cart[k];h+='<div class="ci"><div class="it" style="padding:0;border:0"><span>'+esc(k)+'<small>'+fmt(P[k])+(c.q>1?' × '+c.q+' = '+fmt(P[k]*c.q):'')+'</small></span><div class="st"><button class="b" data-d="'+esc(k)+'" data-a="-1">−</button><b>'+c.q+'</b><button class="b p" data-d="'+esc(k)+'" data-a="1">+</button></div></div></div>'}
+$("cart").innerHTML=h||'<p class="mut">Пока ничего не выбрано.</p>';var t=total(),sm=sum(),sv=Math.round(sm*0.1);$("tot").innerHTML=t?'<div><span>Сумма блюд</span><span>'+fmt(sm)+'</span></div><div><span>Обслуживание 10%</span><span>'+fmt(sv)+'</span></div><div class="g"><span>Итого</span><span>'+fmt(sm+sv)+'</span></div>':'';$("go").textContent="Ваш заказ: "+t+" "+(t%10==1&&t%100!=11?"блюдо":(t%10>1&&t%10<5&&(t%100<10||t%100>20)?"блюда":"блюд"))+(t?" · "+fmt(sm+sv):"")+" — оформить"}
+function draw(){drawMenu();drawCart();save()}
+document.addEventListener("click",function(e){var b=e.target.closest("button");if(!b||!b.dataset.d)return;var d=b.dataset.d,a=+b.dataset.a;cart[d]=cart[d]||{q:0};cart[d].q+=a;if(cart[d].q<=0)delete cart[d];$("res").className="hid";var y=window.scrollY;draw();window.scrollTo(0,y)});
+$("q").addEventListener("input",drawMenu);
+$("go").onclick=function(){$("order").scrollIntoView({behavior:"smooth"})};
+function fd(v){var p=v.split("-");return p[2]+"."+p[1]+"."+p[0]}
+function hash(s){var h=5381;for(var i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))>>>0;return h.toString(36).toUpperCase().slice(0,6)}
+$("mk").onclick=function(){var e="";if(!$("nm").value.trim())e="Укажите имя, на которое сделана бронь.";else if(!$("dt").value)e="Укажите дату.";else if(mode=="tm"&&!$("tm").value)e="Укажите время или выберите «Подготовить к ифтару».";else if(!total())e="Выберите хотя бы одно блюдо.";
+$("err").textContent=e;if(e)return;var m=["ПРЕДЗАКАЗ — Аль-Баракат","Бронь на имя: "+$("nm").value.trim(),"Дата: "+fd($("dt").value)];if($("gs").value)m.push("Гостей: "+$("gs").value);
+m.push("Подача: "+(mode=="ift"?"к ифтару":"к "+$("tm").value),"");var i=0;for(var k in cart){i++;m.push(i+". "+k+(cart[k].q>1?" × "+cart[k].q:""))}var s0=sum(),sv0=Math.round(s0*0.1);m.push("","Сумма блюд: "+fmt(s0),"Обслуживание 10%: "+fmt(sv0),"Итого: "+fmt(s0+sv0),"(по меню; окончательный счёт — в ресторане)");
+var t=m.join("\n");t+="\n\nКод: "+hash(t);$("msg").textContent=t;$("wa").href="https://wa.me/"+WA+"?text="+encodeURIComponent(t);$("res").className="";
+modal("Сообщение ещё не отправлено!","<p>Мы пока ничего не получили.</p><p>Нажмите зелёную кнопку <b>«Отправить в WhatsApp»</b>, а затем кнопку отправки в самом чате WhatsApp.</p>",function(){$("res").scrollIntoView({behavior:"smooth"})})};
+$("cp").onclick=function(){var t=$("msg").textContent;var done=function(){$("ok").textContent="Текст скопирован. Вставьте его в чат WhatsApp +7 707 807 73 88 и отправьте."};
+function fb(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");done()}catch(e){$("ok").textContent="Выделите текст выше и скопируйте вручную."}a.remove()}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fb)}else fb()};
+draw();
+modal("Важно, прочтите","<p>Эта страница только помогает составить предзаказ. <b>Она ничего не отправляет и не бронирует стол.</b></p><p>Когда выберете блюда, нужно <b>самим отправить</b> получившееся сообщение нам в WhatsApp. Предзаказ принят, когда мы подтвердим его ответным сообщением.</p><p>Стол бронируется отдельно у администратора.</p>");
+</script></body></html>
